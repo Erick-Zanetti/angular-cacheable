@@ -1,0 +1,19 @@
+{
+  "name": "angular-cacheable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  },
+  "author": "Zanetti, Erick",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.4",
+    "typescript": "^5.4.3"
+  }
+}
