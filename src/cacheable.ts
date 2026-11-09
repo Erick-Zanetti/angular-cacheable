@@ -1,4 +1,4 @@
-import { tap } from 'rxjs/operators';
+import { tap } from 'rxjs';
 import { CacheService } from './cache-service';
 import { RequestCache } from './request-cache';
 
@@ -40,7 +40,7 @@ export function Cacheable(timer?: number): MethodDecorator {
 function callOriginalFunction(this: TypedPropertyDescriptor<any>, originalMethod: any, args: any[], cacheKey: string, timer: number | undefined) {
     const result = originalMethod.apply(this, args);
     result.pipe(
-        tap((response) => {
+        tap((response: any) => {
             const cacheSaved = CacheService.get(cacheKey);
             cacheSaved?.buffer.next(response);
             cacheSaved?.markeAsCompleted();

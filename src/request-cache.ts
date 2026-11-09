@@ -8,7 +8,7 @@ export class RequestCache {
 
     private _buffer: BehaviorSubject<any> = new BehaviorSubject<any>(NULLABLE);
     get buffer(): BehaviorSubject<any> {
-        return this._buffer.pipe(filter((data) => data !== NULLABLE)) as BehaviorSubject<any>;
+        return this._buffer.pipe(filter((data: any) => data !== NULLABLE)) as BehaviorSubject<any>;
     }
 
     markeAsCompleted() {

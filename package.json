@@ -1,7 +1,7 @@
 {
   "name": "angular-cacheable",
   "version": "1.0.0",
-  "description": "",
+  "description": "This library provides a single decorator function, `Cacheable`, designed to enhance methods with caching capabilities. It leverages RxJS operators and a simple caching service to store and retrieve method call results based on unique arguments and method names. This functionality is especially useful for reducing the number of repeated calls to resource-intensive or time-consuming operations.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -15,5 +15,14 @@
   "devDependencies": {
     "@types/node": "^20.12.4",
     "typescript": "^5.4.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erick-Zanetti/angular-cacheable.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Erick-Zanetti/angular-cacheable/issues"
+  },
+  "homepage": "https://github.com/Erick-Zanetti/angular-cacheable#readme"
 }
